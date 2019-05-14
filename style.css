@@ -1,0 +1,180 @@
+@font-face {
+    font-family: nexab;
+    src: url('font/nexab.ttf');
+}
+body {
+    margin: 0;
+    background-size: cover;
+    height: 90vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+.header{
+    background-color: rgba(30,30,30,0.4);
+    color: white;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2%;
+}
+header h1 {
+    font-weight: normal;
+    font-family: nexab;
+    font-size: 2em;
+    color: white;
+}
+table {
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+input[type=number]{
+    width: 30%;
+    margin: 2%;
+    border-radius: 3px;
+}
+input[type=submit]{
+    border-radius: 8px;
+    width: 30%;
+}
+.input_center{
+    margin: auto;
+    width: 50%;
+}
+td{
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+    background-color: #E0E0E0;
+}
+#message_error{
+    color: navajowhite;
+    visibility: hidden;
+    font-family: nexab;
+    text-align: center;
+}
+.red{
+    background-color: red;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+    animation: bounce 0.45s ease 1 alternate;
+}
+.yellow{
+    background-color: yellow;
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+    animation: bounce 0.45s ease 1 alternate;
+}
+
+.blue{
+    background-color: yellow;
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+    animation: bounce 0.45s ease 1 alternate;
+}
+.players{
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+.cadre{
+    background-color: rgba(97, 56, 11, 0.4);
+
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
+#enCours{
+    font-family: nexab;
+    color: red;
+}
+#choosePlayer{
+    background: rgba(214, 214, 213, 0.5);
+    border-radius: 8px;
+    border: 1px solid lightblue;
+    margin: auto;
+    text-align: center;
+}
+.textPlayer {
+    margin: auto;
+}
+
+#restart{
+    visibility: hidden;
+}
+@keyframes bounce {
+    from {
+        transform: translateY(-1100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.twf_error {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 30px ;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    -moz-border-radius:.5em;
+    -webkit-border-radius:.5em;
+    border-radius:.5em;
+}
+
+.twf_error {
+    color: #D8000C;
+    background-color: #FFBABA;
+
+}
+.twf_error.icon {
+    background-image: url('../images/error.png');
+    padding-left:50px;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}

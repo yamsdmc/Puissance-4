@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puissance 4</title>
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<header class='header'><h1>Puissance 4</h1></header>
+<div class="container">
+    <!--<input type="submit" id="undo">-->
+    <div class='input_center'><input type='number' min='1' id='nb_y' placeholder='nombre de colone' value='6' /><input type='number' min='1' id='nb_x' placeholder='nombre de largeur' value='7' /><input type='submit'class='btn btn-warning' value='Commencer' id='submit'/></div>
+
+    <div id="choosePlayer" class="col-lg-3"><p class='textPlayer' id='enCours'>Au tour de red de jouer !</p></div>
+    <p id='message_error'>Vous devez entrer un minimum de 4 en hauteur et largeur !</p>
+
+    <div class='players container'><div class='col-lg-1 cadre'><p>Red</p><p id="scoreRed">0</p></div><button type="button" id="restart" class="btn btn-secondary">Relancer</button><div class='col-lg-1 cadre'><p>Yellow</p><p id="scoreYellow">0</p></div></div>
+    <br>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="puissance.js"></script>
+</>
+</body>
+</html>
